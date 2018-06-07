@@ -11,10 +11,9 @@ import java.util.List;
 public class badCode1 {
 	
 	private int maxLimit;	
-	
 
 	public badCode1(int i){
-		
+		this.maxLimit=i;
 	}
 
 public static List<Integer> primeNumbersBruteForce(int n) {
