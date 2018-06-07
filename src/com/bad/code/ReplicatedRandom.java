@@ -70,12 +70,12 @@ public class ReplicatedRandom extends Random {
 	}
 
 	public static void main(String[] args) {
-		Random r = new Random();
+		Random random = new Random();
 		ReplicatedRandom rr = new ReplicatedRandom();
-		rr.replicateState(r.nextDouble());
-		System.out.println(r.nextDouble() == rr.nextDouble()); // True
-		System.out.println(r.nextDouble() == rr.nextDouble()); // True
-		System.out.println(r.nextDouble() == rr.nextDouble()); // True
+		rr.replicateState(random.nextDouble());
+		System.out.println(random.nextDouble() == rr.nextDouble()); // True
+		System.out.println(random.nextDouble() == rr.nextDouble()); // True
+		System.out.println(random.nextDouble() == rr.nextDouble()); // True
 
 	}
 
